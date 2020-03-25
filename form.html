@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>資管營報名表</title>
+	<style >
+		#a {
+				margin:0px auto;
+				padding-top: 0px; 
+				background-color: black;
+				color: white;
+				border-style:dashed;
+				border-width:5px;
+				width:700px;
+				height:1300px;	
+ 			}
+ 		#b {
+ 				margin:0px auto;
+ 				margin-top:25px; 
+				background-color: #FFFFBB;
+				color: black;
+				width:630px;
+				height:750px;	
+ 			}
+ 		#c {
+ 			background-color: transparent;
+ 			border-radius: 5px;
+ 			padding :3px;
+ 			margin-top: 10px;
+ 			}
+	</style>
+
+</head>
+<body>
+	<div style="float:left">
+		<img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/88114640_2730012450439786_4329381082236452864_n.jpg?_nc_cat=102&_nc_sid=85a577&_nc_ohc=-4-_HX19SDwAX9FMaw2&_nc_ht=scontent.fkhh1-1.fna&oh=23398d473495ed0c1df28e3296b3375c&oe=5E901C6F" width="350px">
+	</div>
+		<div style="float:right">
+		<img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/88114640_2730012450439786_4329381082236452864_n.jpg?_nc_cat=102&_nc_sid=85a577&_nc_ohc=-4-_HX19SDwAX9FMaw2&_nc_ht=scontent.fkhh1-1.fna&oh=23398d473495ed0c1df28e3296b3375c&oe=5E901C6F" width="350px">
+	</div>
+	<div id="a">
+	<center>
+		<h1>高雄大學資管系第九屆資管營</h1>
+		<a href="https://www.facebook.com/nukimcamp/"><img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/78411951_2685976821446296_7064760510842929152_o.jpg?_nc_cat=102&_nc_sid=ca434c&_nc_ohc=bDP8aVwZbm0AX8L_LgI&_nc_ht=scontent.fkhh1-1.fna&oh=3a4530832ca3f4d8d5ad92ace0422740&oe=5E8CDA44" width="90%"></a>
+	</center>
+
+	<div id="b">
+		<center>
+		<form action="submit.php" method="POST"> 
+		姓名 : 	<input type="text" placeholder="就是您的大名" name="name"  id="c" required><br>
+		性別 : 
+		<input type="radio" name="gender" value="M" id="c" required>男
+		<input type="radio" name="gender" value="F" id="c" required>女<br>
+		出生年月日 : <input type="date" name="birth" id="c" required><br>
+		身分證字號 ：<input type="text" name="personal_id" placeholder="ex : E123456789" id="c" required><br>
+		連絡電話 : 	<input type="text"  name="phonenumber" placeholder="ex : 0952052020" id="c" required><br>
+		聯絡E-mail : <input type="email" name="mail" placeholder="ex : xxx@gmail.com" id="c" required><br>
+		通訊地址 : <input type="text" name="address" placeholder="請輸入詳細地址" id="c" required><br>
+		就讀何所高中職 : <input type="text" name="school" placeholder="ex : 瑞祥高中" id="c" required><br>
+		緊急聯絡人姓名 : 	<input type="text"  name="parentname" placeholder="請輸入全名" id="c" required><br>
+		緊急聯絡人電話 : 	<input type="text"  name="parentphone" placeholder="ex : 0952052020" id="c" required><br>
+		飲食習慣 : 
+		<input type="radio" name="eat" value="葷食" id="c">葷食
+		<input type="radio" name="eat" value="素食F" id="c">素食
+		<input type="radio" name="eat" value="蛋奶素" id="c">蛋奶素
+		<input type="radio" name="eat" value="其他" id="c">其他
+		<input type="text" name="eatoher" placeholder="若選取其他請填寫" id="c"></br>
+		健康狀況 : 
+		<input type="radio" name="disease" value="氣喘" id="c">氣喘
+		<input type="radio" name="disease" value="高血壓" id="c">高血壓
+		<input type="radio" name="disease" value="蠶豆症" id="c">蠶豆症
+		<input type="radio" name="disease" value="心臟病" id="c">心臟病
+		<input type="radio" name="disease" value="其他" id="c">其他
+		<input type="text" name="diseaseother" placeholder="若選取其他請填寫" id="c"></br>
+		營服尺寸 : 
+		<input type="radio" name="size" value="XS" id="c">XS
+		<input type="radio" name="size" value="S" id="c">S
+		<input type="radio" name="size" value="M" id="c">M
+		<input type="radio" name="size" value="L" id="c">L
+		<input type="radio" name="size" value="XL" id="c">XL<br>
+		居住地 :
+		<select name="live[]" multiple>
+		<option value="北部">北部</option>
+		<option value="中部">中部</option>
+		<option value="南部">南部</option>
+		<option value="東部">東部</option>
+	</select><br>
+
+		備註 : <textarea rows="10" cols="500" name="comment" style="width: 500px;margin-top: 10px">
+Please introduce yourself briefly
+		</textarea><br>
+		<input type="submit" value="提交" name="">
+		<input type="reset" value="全部重填" name=""><br>
+		</center>
+	</div>
+
+
+	
+	</div>
+</body>
+</html>
